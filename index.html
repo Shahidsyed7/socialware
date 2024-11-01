@@ -1,110 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialWare</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Argumend:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #37403a, #4c5754); /* Gradient background */
-            color: #fef1d7; /* Beige font color */
-            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Argumend', sans-serif;
+            background-color: #37403a; /* Dark green */
+            color: #fef1d7; /* Beige */
+            text-align: center;
+            overflow-x: hidden;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
-            overflow: hidden;
+            height: auto;
+            padding: 20px;
         }
+
+        header {
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo {
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            transform: translateZ(0);
+            animation: popIn 0.5s ease forwards;
+        }
+
+        .logo span {
+            display: block;
+            font-weight: 400;
+            font-size: 1.2em;
+            margin-top: -10px;
+            letter-spacing: 2px;
+        }
+
         .container {
             max-width: 800px;
-            padding: 40px;
-            border-radius: 10px;
-            background-color: rgba(55, 64, 58, 0.9); /* Semi-transparent dark green */
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4); /* Shadow effect */
+            padding: 20px;
+            background-color: rgba(239, 241, 215, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 1.5s ease forwards;
         }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-            animation: fadeIn 1s; /* Animation */
-        }
-        h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-            animation: fadeIn 1s 0.2s; /* Animation with delay */
-        }
+
         p {
-            font-size: 1.1em;
-            line-height: 1.5;
             margin: 20px 0;
-            animation: fadeIn 1s 0.4s; /* Animation with delay */
+            font-size: 1.2em;
+            line-height: 1.5;
         }
-        a {
-            color: #fef1d7; /* Beige font color for links */
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #ffff99; /* Lighter color on hover */
-        }
-        .contact {
-            margin: 30px 0;
-            animation: fadeIn 1s 0.6s; /* Animation with delay */
-        }
-        button {
-            background-color: #5a6c66; /* Slightly lighter dark green */
-            color: #fef1d7; /* Beige font color */
+
+        .button {
+            background-color: #fef1d7; /* Beige */
+            color: #37403a; /* Dark green */
+            padding: 12px 25px;
             border: none;
-            padding: 15px 30px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        button:hover {
-            background-color: #4c5754; /* Even darker green */
-            transform: scale(1.1); /* Slightly enlarge button */
+
+        .button:hover {
+            background-color: #37403a;
+            color: #fef1d7;
+            transform: translateY(-2px);
         }
+
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: rgba(239, 241, 215, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        footer {
+            margin-top: 20px;
+            animation: fadeIn 2.5s ease-in-out;
+            font-size: 0.9em;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(20px);
             }
             to {
                 opacity: 1;
-                transform: translateY(0);
             }
         }
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #e0e0e0; /* Lighter grey for footer */
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 2.5em;
+            }
+            .logo span {
+                font-size: 1em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .button {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1 class="logo">Social<br><span>Ware®</span></h1>
+    </header>
+
     <div class="container">
-        <h1>Welcome to SocialWare</h1>
-        <h2>Your Social Media Marketing Agency</h2>
-        <p>Started with a few friends, we aim to help small and medium businesses thrive in the digital world through effective social media strategies.</p>
-
-        <h3>Connect with Us on Instagram</h3>
-        <p>Follow us on Instagram for updates, tips, and more:</p>
-        <p><a href="https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn" target="_blank">Instagram Profile <i class="fab fa-instagram"></i></a></p>
-
-        <div class="contact">
-            <h3>Chat with Us on Instagram</h3>
-            <p>Need help? Click the button below to start a chat!</p>
-            <button onclick="window.open('https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn', '_blank')">Chat on Instagram</button>
-        </div>
+        <p>
+            SocialWare is a startup founded by a group of friends targeting small and medium businesses. We provide
+            innovative social media marketing solutions to help your business grow and thrive in the digital space.
+        </p>
+        <a href="https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn" class="button">Connect with Us on Instagram</a>
     </div>
+
+    <div class="section">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to elevate your brand:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>🌟 Social Media Strategy</li>
+            <li>📈 Content Creation</li>
+            <li>🔍 SEO Optimization</li>
+            <li>📊 Analytics & Reporting</li>
+            <li>🎯 Ad Management</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Testimonials</h2>
+        <p class="testimonial">"SocialWare transformed our online presence! Our engagement has doubled!" - Happy Client</p>
+        <p class="testimonial">"Thanks to SocialWare, our business has seen incredible growth!" - Satisfied Business Owner</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>If you're interested in our services, reach out to us!</p>
+        <p>Email: <a href="mailto:info@socialware.live" style="color: #fef1d7;">info@socialware.live</a></p>
+    </div>
+
     <footer>
-        &copy; 2024 SocialWare. All rights reserved.
+        <p>&copy; 2024 SocialWare. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
