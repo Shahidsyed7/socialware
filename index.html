@@ -5,50 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialWare</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, #003300, #004d00); /* Gradient background */
-            color: #f5f5dc; /* Beige font color */
+            background: linear-gradient(135deg, #37403a, #4c5754); /* Gradient background */
+            color: #fef1d7; /* Beige font color */
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 20px;
-        }
-        h1, h2, h3 {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-        }
-        a {
-            color: #f5f5dc; /* Beige font color for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            overflow: hidden;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 2px solid #f5f5dc; /* Beige border */
+            padding: 40px;
             border-radius: 10px;
-            background-color: rgba(0, 51, 0, 0.8); /* Semi-transparent dark green */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            background-color: rgba(55, 64, 58, 0.9); /* Semi-transparent dark green */
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4); /* Shadow effect */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: fadeIn 1s; /* Animation */
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            animation: fadeIn 1s 0.2s; /* Animation with delay */
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 20px 0;
+            animation: fadeIn 1s 0.4s; /* Animation with delay */
+        }
+        a {
+            color: #fef1d7; /* Beige font color for links */
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ffff99; /* Lighter color on hover */
         }
         .contact {
-            text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
+            animation: fadeIn 1s 0.6s; /* Animation with delay */
         }
         button {
-            background-color: #006400; /* Darker green */
-            color: #f5f5dc; /* Beige font color */
+            background-color: #5a6c66; /* Slightly lighter dark green */
+            color: #fef1d7; /* Beige font color */
             border: none;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
             transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
         }
         button:hover {
-            background-color: #004d00; /* Even darker green */
-            transform: scale(1.05); /* Slightly enlarge button */
+            background-color: #4c5754; /* Even darker green */
+            transform: scale(1.1); /* Slightly enlarge button */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #e0e0e0; /* Lighter grey for footer */
         }
     </style>
 </head>
@@ -60,7 +95,7 @@
 
         <h3>Connect with Us on Instagram</h3>
         <p>Follow us on Instagram for updates, tips, and more:</p>
-        <p><a href="https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn" target="_blank">Instagram Profile</a></p>
+        <p><a href="https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn" target="_blank">Instagram Profile <i class="fab fa-instagram"></i></a></p>
 
         <div class="contact">
             <h3>Chat with Us on Instagram</h3>
@@ -68,5 +103,8 @@
             <button onclick="window.open('https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn', '_blank')">Chat on Instagram</button>
         </div>
     </div>
+    <footer>
+        &copy; 2024 SocialWare. All rights reserved.
+    </footer>
 </body>
 </html>
