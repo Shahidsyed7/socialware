@@ -4,40 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialWare - Digital Marketing Agency</title>
-    <link rel="icon" href="https://github.com/Shahidsyed7/socialware/raw/main/Social%20logo.png" type="image/png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Add Lato font -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: sans-serif; /* Set font to sans-serif */
-        }
-
-        .portfolio-container {
-            display: flex;
-            flex-direction: column; /* Stack videos vertically */
-            align-items: center; /* Center the videos horizontally */
-            gap: 20px; /* Space between videos */
-        }
-
-        .project-video {
-            width: 80%; /* Adjust the width for a horizontal layout */
-            max-width: 800px; /* Maximum width for larger screens */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        header, footer {
-            text-align: center; /* Center align header and footer text */
-        }
-
-        nav ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0; /* Remove padding */
-        }
-
-        nav ul li {
-            display: inline; /* Display items in a line */
-            margin: 0 15px; /* Add space between items */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -45,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li> <!-- Changed to Works -->
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -83,24 +51,24 @@
         </div>
     </section>
 
-    <section class="portfolio" id="works"> <!-- Changed to Works -->
-        <h2>Our Works</h2> <!-- Changed to Works -->
+    <section class="portfolio" id="portfolio">
+        <h2>Our Works</h2> <!-- Changed "Projects" to "Works" -->
         <div class="portfolio-container">
             <div class="project">
-                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
-                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/kia.MP4?raw=true" type="video/mp4">
+                <video class="project-video" autoplay muted loop>
+                    <source src="https://github.com/Shahidsyed7/socialware/raw/main/kia.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
-                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/fest.MP4?raw=true" type="video/mp4">
+                <video class="project-video" autoplay muted loop>
+                    <source src="https://github.com/Shahidsyed7/socialware/raw/main/fest.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
-                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/holi.MP4?raw=true" type="video/mp4">
+                <video class="project-video" autoplay muted loop>
+                    <source src="https://github.com/Shahidsyed7/socialware/raw/main/holi.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
