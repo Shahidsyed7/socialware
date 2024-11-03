@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialWare - Digital Marketing Agency</title>
+    <link rel="icon" href="https://github.com/Shahidsyed7/socialware/raw/main/Social%20logo.png" type="image/png"> <!-- Favicon -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Lato Font -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Set font to Lato */
+            background-color: #363f3a; /* Dark green background */
+            color: #fef1d7; /* Beige font color */
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-direction: column; /* Stack videos vertically */
+            align-items: center; /* Center the videos horizontally */
+            gap: 20px; /* Space between videos */
+        }
+
+        .project-video {
+            width: 80%; /* Adjust the width for a horizontal layout */
+            max-width: 800px; /* Maximum width for larger screens */
+            height: auto; /* Maintain aspect ratio */
+            border: 5px solid #fef1d7; /* Beige border around videos */
+        }
+
+        header, footer {
+            text-align: center; /* Center align header and footer text */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Add space between items */
+        }
+
+        .service img {
+            width: 100%; /* Responsive image size */
+            height: auto; /* Maintain aspect ratio */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on images */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +55,7 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#works">Works</a></li> <!-- Changed to Works -->
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -34,6 +76,11 @@
                 <p>Boost your online presence with targeted social media strategies.</p>
             </div>
             <div class="service">
+                <img src="https://github.com/Shahidsyed7/socialware/blob/main/adshoots.jpg?raw=true" alt="Ad Shoots Icon">
+                <h3>Ad Shoots</h3>
+                <p>Create stunning visuals to promote your brand effectively.</p>
+            </div>
+            <div class="service">
                 <img src="https://github.com/Shahidsyed7/socialware/blob/main/contentcreation.jpg?raw=true" alt="Content Creation Icon">
                 <h3>Content Creation</h3>
                 <p>Engaging content tailored for your audience to drive results.</p>
@@ -43,32 +90,27 @@
                 <h3>Event Shoots</h3>
                 <p>Capturing the essence of your events with professional photography and videography.</p>
             </div>
-            <div class="service">
-                <img src="https://github.com/Shahidsyed7/socialware/blob/main/adshoots.jpg?raw=true" alt="Ad Shoots Icon">
-                <h3>Ad Shoots</h3>
-                <p>Create stunning visuals to promote your brand effectively.</p>
-            </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-        <h2>Our Projects</h2>
+    <section class="portfolio" id="works"> <!-- Changed to Works -->
+        <h2>Our Works</h2> <!-- Changed to Works -->
         <div class="portfolio-container">
             <div class="project">
-                <video controls class="video-frame">
-                    <source src="path_to_your_video1.mp4" type="video/mp4"> <!-- Replace with actual video path -->
+                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
+                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/kia.MP4?raw=true" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <video controls class="video-frame">
-                    <source src="path_to_your_video2.mp4" type="video/mp4"> <!-- Replace with actual video path -->
+                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
+                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/fest.MP4?raw=true" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="project">
-                <video controls class="video-frame">
-                    <source src="path_to_your_video3.mp4" type="video/mp4"> <!-- Replace with actual video path -->
+                <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
+                    <source src="https://github.com/Shahidsyed7/socialware/blob/main/holi.MP4?raw=true" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
