@@ -66,8 +66,9 @@ nav ul li a {
 }
 
 .service img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Auto height */
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 .portfolio-container {
