@@ -1,29 +1,17 @@
-/* Base Styles */
-* {
+body {
+    font-family: 'TT Phobos', sans-serif; /* Set the font to TT Phobos */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-body {
-    background-color: #37403a;
-    color: #fef1d7;
-}
-
-a {
-    color: #fef1d7;
-    text-decoration: none;
-}
-
-/* Header */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
     padding: 20px;
-    background-color: #37403a;
-    border-bottom: 1px solid #fef1d7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -32,117 +20,91 @@ header {
 
 nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin-left: 20px;
 }
 
-nav ul li a:hover {
-    color: #9bb19b;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
 
-/* Hero Section */
 .hero {
+    background: url('https://via.placeholder.com/1500') no-repeat center center/cover; /* Placeholder for hero image */
+    color: white;
     text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
+    padding: 100px 20px;
 }
 
 .cta-button {
-    display: inline-block;
-    background-color: #fef1d7;
-    color: #37403a;
+    background-color: #007bff;
+    color: white;
     padding: 10px 20px;
-    margin-top: 20px;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #9bb19b;
-}
-
-/* Services Section */
 .services {
-    text-align: center;
     padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
 .service-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .service {
-    width: 200px;
-    margin: 20px;
+    background-color: #fff;
     padding: 20px;
-    background-color: #46534a;
     border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
 }
 
-.service:hover {
-    transform: scale(1.05);
-}
-
-.service img {
-    width: 60px;
-    margin-bottom: 15px;
-}
-
-/* Portfolio Section */
 .portfolio {
     padding: 40px 20px;
-    text-align: center;
 }
 
 .portfolio-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Arrange projects vertically */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Space between project items */
+    margin-top: 20px; /* Space above the portfolio section */
 }
 
 .project {
-    width: 250px;
-    margin: 20px;
-    transition: transform 0.3s;
+    background-color: #fef1d7; /* Background color for project */
+    color: #37403a; /* Text color */
+    padding: 20px; /* Padding for inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    width: 80%; /* Width of project cards */
+    max-width: 600px; /* Max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.project:hover {
-    transform: scale(1.05);
+video {
+    width: 100%; /* Full width video */
+    border-radius: 10px; /* Rounded corners for video */
 }
 
-.project img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Contact Section */
 .contact {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
     text-align: center;
     padding: 20px;
-    background-color: #37403a;
-    border-top: 1px solid #fef1d7;
+    background-color: #f8f9fa;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .service-container, .portfolio-container {
-        flex-direction: column;
-        align-items: center;
-    }
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
