@@ -1,201 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialWare</title>
-    <link href="https://fonts.googleapis.com/css2?family=Argumend:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Argumend', sans-serif;
-            background-color: #37403a; /* Dark green */
-            color: #fef1d7; /* Beige */
-            text-align: center;
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            padding: 20px;
-        }
-
-        header {
-            margin-bottom: 30px;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .logo {
-            font-size: 3em;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin: 0;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-            transform: translateZ(0);
-            animation: popIn 0.5s ease forwards;
-        }
-
-        .logo span {
-            display: block;
-            font-weight: 400;
-            font-size: 1.2em;
-            margin-top: -10px;
-            letter-spacing: 2px;
-        }
-
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            background-color: rgba(239, 241, 215, 0.1);
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 1.5s ease-in-out;
-            transform: translateY(20px);
-            opacity: 0;
-            animation: fadeInUp 1.5s ease forwards;
-        }
-
-        p {
-            margin: 20px 0;
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-
-        .button {
-            background-color: #fef1d7; /* Beige */
-            color: #37403a; /* Dark green */
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 1.2em;
-            animation: fadeIn 2s ease-in-out;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .button:hover {
-            background-color: #37403a;
-            color: #fef1d7;
-            transform: translateY(-2px);
-        }
-
-        .section {
-            margin: 40px 0;
-            padding: 20px;
-            background-color: rgba(239, 241, 215, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1.5s ease-in-out;
-            transform: translateY(20px);
-            opacity: 0;
-            animation: fadeInUp 1.5s ease forwards;
-        }
-
-        .testimonial {
-            font-style: italic;
-            margin: 10px 0;
-            font-size: 1em;
-        }
-
-        footer {
-            margin-top: 20px;
-            animation: fadeIn 2.5s ease-in-out;
-            font-size: 0.9em;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes popIn {
-            0% {
-                transform: scale(0.5);
-                opacity: 0;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 600px) {
-            .logo {
-                font-size: 2.5em;
-            }
-            .logo span {
-                font-size: 1em;
-            }
-            p {
-                font-size: 1em;
-            }
-            .button {
-                font-size: 1em;
-            }
-        }
-    </style>
+    <title>SocialWare - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <h1 class="logo">Social<br><span>Ware®</span></h1>
+        <img src="https://github.com/Shahidsyed7/socialware/blob/main/Social%20logo.png?raw=true" alt="SocialWare Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <p>
-            SocialWare is a startup founded by a group of friends targeting small and medium businesses. We provide
-            innovative social media marketing solutions to help your business grow and thrive in the digital space.
-        </p>
-        <a href="https://www.instagram.com/the.socialware/profilecard/?igsh=dmN0emhleGE5dTRn" class="button">Connect with Us on Instagram</a>
-    </div>
+    <section class="hero" id="home">
+        <h1>Welcome to SocialWare</h1>
+        <p>Helping small and medium businesses excel in the digital space.</p>
+        <a href="https://www.instagram.com/the.socialware/profilecard/?igshid=dmN0emhleGE5dTRn" class="cta-button">Connect with Us on Instagram</a>
+    </section>
 
-    <div class="section">
+    <section class="services" id="services">
         <h2>Our Services</h2>
-        <p>We offer a range of services to elevate your brand:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>🌟 Social Media Strategy</li>
-            <li>📈 Content Creation</li>
-            <li>🔍 SEO Optimization</li>
-            <li>📊 Analytics & Reporting</li>
-            <li>🎯 Ad Management</li>
-        </ul>
-    </div>
+        <div class="service-container">
+            <div class="service">
+                <img src="https://via.placeholder.com/60" alt="Social Media Marketing Icon">
+                <h3>Social Media Marketing</h3>
+                <p>Boost your online presence with targeted social media strategies.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/60" alt="Ad Shoots Icon">
+                <h3>Ad Shoots</h3>
+                <p>Create stunning visuals to promote your brand effectively.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/60" alt="Content Creation Icon">
+                <h3>Content Creation</h3>
+                <p>Engaging content tailored for your audience to drive results.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/60" alt="Events Icon">
+                <h3>Events</h3>
+                <p>Organizing memorable events to showcase your brand.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Testimonials</h2>
-        <p class="testimonial">"SocialWare transformed our online presence! Our engagement has doubled!" - Happy Client</p>
-        <p class="testimonial">"Thanks to SocialWare, our business has seen incredible growth!" - Satisfied Business Owner</p>
-    </div>
+    <section class="portfolio" id="portfolio">
+        <h2>Our Projects</h2>
+        <div class="portfolio-container">
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Project Thumbnail">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Project Thumbnail">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Project Thumbnail">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Project Thumbnail">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>If you're interested in our services, reach out to us!</p>
-        <p>Email: <a href="mailto:info@socialware.live" style="color: #fef1d7;">info@socialware.live</a></p>
-    </div>
+        <p>Email: <a href="mailto:the.socialware@gmail.com">the.socialware@gmail.com</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2024 SocialWare. All rights reserved.</p>
+        <p>&copy; 2024 SocialWare. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
