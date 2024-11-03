@@ -1,145 +1,75 @@
-/* Base Styles */
-* {
+body {
+    font-family: 'Lato', sans-serif; /* Set font to Lato */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'TT Phobos', Arial, sans-serif; /* Updated font */
 }
 
-body {
-    background-color: #37403a;
-    color: #fef1d7;
-}
-
-a {
-    color: #fef1d7;
-    text-decoration: none;
-}
-
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center; /* Center align header text */
     padding: 20px;
-    background-color: #37403a;
-    border-bottom: 1px solid #fef1d7;
+    background-color: #f8f8f8; /* Light background for the header */
 }
 
 .logo {
-    width: 150px;
+    max-width: 150px; /* Set max width for logo */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
 nav ul li {
-    margin: 0 10px;
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Add space between items */
 }
 
-nav ul li a:hover {
-    color: #9bb19b;
-}
-
-/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 80px 20px;
+    text-align: center; /* Center align hero section text */
+    padding: 50px 20px; /* Add padding */
+    background-color: #e9ecef; /* Light gray background */
 }
 
-.hero h1 {
-    font-size: 2.5em;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #fef1d7;
-    color: #37403a;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #9bb19b;
-}
-
-/* Services Section */
-.services {
-    text-align: center;
-    padding: 40px 20px;
+.services, .portfolio, .contact {
+    padding: 50px 20px; /* Add padding to sections */
 }
 
 .service-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around; /* Space out services evenly */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .service {
-    width: 200px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #46534a;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s;
+    max-width: 250px; /* Set a max width for services */
+    text-align: center; /* Center align service text */
+    margin: 20px; /* Add margin */
 }
 
-.service:hover {
-    transform: scale(1.05);
-}
-
-.service img {
-    width: 60px;
-    margin-bottom: 15px;
-}
-
-/* Works Section */
-.works {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.video-container {
+.portfolio-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center the videos horizontally */
+    gap: 20px; /* Space between videos */
 }
 
-.video {
-    width: 250px;
-    margin: 20px;
-    border-radius: 5px;
-    overflow: hidden;
+.project-video {
+    width: 80%; /* Adjust the width for a horizontal layout */
+    max-width: 800px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.video video {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-.contact {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #37403a;
-    border-top: 1px solid #fef1d7;
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Add padding */
+    background-color: #f8f8f8; /* Light background for the footer */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .service-container, .video-container {
-        flex-direction: column;
-        align-items: center;
-    }
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
