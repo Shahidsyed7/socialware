@@ -1,118 +1,100 @@
 body {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light gray background for the whole page */
-    color: #333; /* Dark text color */
+    background-color: #4CAF50; /* Dark green background */
+    color: #f5f5dc; /* Beige text color */
 }
 
 header {
-    background: #333; /* Dark background for header */
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Dark background for header */
+    color: #f5f5dc; /* Beige text color */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    max-width: 150px;
+    height: 50px; /* Logo height */
+    margin-left: 20px; /* Left margin */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-right: 20px; /* Spacing between nav items */
 }
 
-nav a {
+nav ul li a {
+    color: #f5f5dc; /* Beige text color */
     text-decoration: none;
-    color: #fff; /* White text color for navigation links */
-    font-weight: bold;
 }
 
 .hero {
-    background: #555; /* Darker gray for hero section */
-    color: white; /* White text color */
-    padding: 50px 0;
+    background-color: #4CAF50; /* Dark green background */
+    color: #f5f5dc; /* Beige text color */
     text-align: center;
+    padding: 50px 20px;
 }
 
 .cta-button {
-    background: #e63946; /* Vibrant color for the call-to-action button */
-    color: white;
+    background-color: #f5f5dc; /* Beige background for button */
+    color: #4CAF50; /* Dark green text for button */
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px; /* Slightly rounded corners for button */
 }
 
-.services, .portfolio, .contact, .request-call {
-    padding: 20px;
+.services, .portfolio, .contact {
+    padding: 50px 20px;
     text-align: center;
 }
 
 .service-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center; /* Center the services */
-    gap: 20px; /* Space between the service items */
 }
 
 .service {
-    flex: 1 1 200px; /* Allow services to grow and shrink, with a minimum width */
-    max-width: 250px; /* Limit maximum width for better layout */
-    text-align: center; /* Center text under the images */
+    margin: 10px; /* Margin around services */
+    flex-basis: 22%; /* Each service takes up 22% of the row */
 }
 
 .service img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 150px; /* Set a max height for images */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Auto height */
 }
 
 .portfolio-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the videos */
-    gap: 20px; /* Space between videos */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center form fields */
-    background: #fff; /* White background for form */
-    padding: 20px; /* Padding around form */
-    border-radius: 5px; /* Slightly rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.project {
+    margin: 10px; /* Margin around projects */
+    flex-basis: 30%; /* Each project takes up 30% of the row */
 }
 
-label {
-    margin: 5px 0;
+video {
+    width: 100%; /* Make video responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
-input {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 250px; /* Set width for input fields */
-    border: 1px solid #ddd; /* Light border for input fields */
-    border-radius: 4px; /* Slightly rounded corners for input */
-}
-
-button {
-    padding: 10px 15px;
-    background: #e63946; /* Match button color with CTA */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Slightly rounded corners for button */
+.contact {
+    background-color: #4CAF50; /* Dark green background for contact */
+    color: #f5f5dc; /* Beige text color */
 }
 
 footer {
+    background-color: #333; /* Dark background for footer */
+    color: #f5f5dc; /* Beige text color */
     text-align: center;
-    padding: 10px;
-    background: #333; /* Dark background for footer */
-    color: white; /* White text color in footer */
+    padding: 10px 0;
 }
