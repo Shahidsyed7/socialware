@@ -6,12 +6,14 @@
     <title>SocialWare - Digital Marketing Agency</title>
     <link rel="icon" href="https://github.com/Shahidsyed7/socialware/raw/main/Social%20logo.png" type="image/png"> <!-- Favicon -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> <!-- Merriweather Font -->
     <style>
         body {
-            font-family: 'Lato', sans-serif; /* Set font to Lato */
+            font-family: 'Merriweather', serif; /* Set font to Merriweather */
             background-color: #363f3a; /* Dark green background */
-            color: #fef1d7; /* Beige font color */
+            color: #fef1d7; /* Beige text color */
+            margin: 0;
+            padding: 0;
         }
 
         .portfolio-container {
@@ -25,7 +27,7 @@
             width: 80%; /* Adjust the width for a horizontal layout */
             max-width: 800px; /* Maximum width for larger screens */
             height: auto; /* Maintain aspect ratio */
-            border: 5px solid #fef1d7; /* Beige border around videos */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Simple shadow for videos */
         }
 
         header, footer {
@@ -42,15 +44,29 @@
             margin: 0 15px; /* Add space between items */
         }
 
+        .service-container {
+            display: flex;
+            justify-content: center; /* Center the services */
+            gap: 20px; /* Space between service icons */
+        }
+
         .service {
-            text-align: center; /* Center align service text */
+            text-align: center; /* Center text in services */
+            width: 150px; /* Set a fixed width for each service */
+            perspective: 1000px; /* Add perspective for 3D effect */
         }
 
         .service img {
-            width: 100px; /* Set a standard size for the service icons */
+            width: 100%; /* Make images responsive */
             height: auto; /* Maintain aspect ratio */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on images */
-            margin-bottom: 10px; /* Space below the image */
+            border: 2px solid #fef1d7; /* Simple border for images */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7), /* Strong shadow for images */
+                        -2px -2px 5px rgba(255, 255, 255, 0.5); /* Light shadow for 3D effect */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .service:hover img {
+            transform: translateY(-5px) scale(1.05); /* Lift image slightly on hover */
         }
     </style>
 </head>
@@ -60,7 +76,7 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li> <!-- Changed to Works -->
+                <li><a href="#works">Our Works</a></li> <!-- Changed to Our Works -->
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -98,8 +114,8 @@
         </div>
     </section>
 
-    <section class="portfolio" id="works"> <!-- Changed to Works -->
-        <h2>Our Works</h2> <!-- Changed to Works -->
+    <section class="portfolio" id="works"> <!-- Changed to Our Works -->
+        <h2>Our Works</h2> <!-- Changed to Our Works -->
         <div class="portfolio-container">
             <div class="project">
                 <video controls autoplay loop muted class="project-video"> <!-- Updated video source -->
