@@ -2,13 +2,13 @@ body {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    background-color: #4CAF50; /* Dark green background */
-    color: #f5f5dc; /* Beige text color */
+    background-color: #363f3a; /* Dark green background */
+    color: #fef1d7; /* Beige text color */
 }
 
 header {
     background-color: #333; /* Dark background for header */
-    color: #f5f5dc; /* Beige text color */
+    color: #fef1d7; /* Beige text color */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -32,22 +32,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f5f5dc; /* Beige text color */
+    color: #fef1d7; /* Beige text color */
     text-decoration: none;
 }
 
 .hero {
-    background-color: #4CAF50; /* Dark green background */
-    color: #f5f5dc; /* Beige text color */
+    background-color: #363f3a; /* Dark green background */
+    color: #fef1d7; /* Beige text color */
     text-align: center;
     padding: 50px 20px;
 }
 
 .cta-button {
-    background-color: #f5f5dc; /* Beige background for button */
-    color: #4CAF50; /* Dark green text for button */
+    background-color: #fef1d7; /* Beige background for button */
+    color: #363f3a; /* Dark green text for button */
     padding: 10px 20px;
-    text-decoration: none;
 }
 
 .services, .portfolio, .contact {
@@ -88,13 +87,13 @@ video {
 }
 
 .contact {
-    background-color: #4CAF50; /* Dark green background for contact */
-    color: #f5f5dc; /* Beige text color */
+    background-color: #363f3a; /* Dark green background for contact */
+    color: #fef1d7; /* Beige text color */
 }
 
 footer {
     background-color: #333; /* Dark background for footer */
-    color: #f5f5dc; /* Beige text color */
+    color: #fef1d7; /* Beige text color */
     text-align: center;
     padding: 10px 0;
 }
