@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'TT Phobos', Arial, sans-serif; /* Updated font */
 }
 
 body {
@@ -98,29 +98,26 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* Portfolio Section */
-.portfolio {
+/* Works Section */
+.works {
     padding: 40px 20px;
     text-align: center;
 }
 
-.portfolio-container {
+.video-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.project {
+.video {
     width: 250px;
     margin: 20px;
-    transition: transform 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.project:hover {
-    transform: scale(1.05);
-}
-
-.project img {
+.video video {
     width: 100%;
     border-radius: 5px;
 }
@@ -141,7 +138,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .service-container, .portfolio-container {
+    .service-container, .video-container {
         flex-direction: column;
         align-items: center;
     }
