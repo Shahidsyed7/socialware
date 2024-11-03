@@ -1,77 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); /* Import Lato font */
-
 body {
     font-family: 'Lato', sans-serif; /* Set font to Lato */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    text-align: center; /* Center align header text */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #f8f8f8; /* Light background for the header */
+    background: #333;
+    color: #fff;
 }
 
 .logo {
-    max-width: 150px; /* Set max width for logo */
+    width: 150px; /* Adjust logo size */
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline; /* Display items in a line */
-    margin: 0 15px; /* Add space between items */
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .hero {
-    text-align: center; /* Center align hero section text */
-    padding: 50px 20px; /* Add padding */
-    background-color: #e9ecef; /* Light gray background */
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
 }
 
-.services, .portfolio, .contact {
-    padding: 50px 20px; /* Add padding to sections */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5c67f2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    padding: 20px;
 }
 
 .service-container {
     display: flex;
-    justify-content: space-around; /* Space out services evenly */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .service {
-    max-width: 250px; /* Set a max width for services */
-    text-align: center; /* Center align service text */
-    margin: 20px; /* Add margin */
+    text-align: center;
+    margin: 20px;
+}
+
+.portfolio {
+    text-align: center; /* Center text in the section */
+    padding: 20px;
 }
 
 .portfolio-container {
-    display: flex;
-    flex-direction: column; /* Stack videos vertically */
-    align-items: center; /* Center the videos horizontally */
-    gap: 20px; /* Space between videos */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+.project {
+    margin: 10px; /* Add space between projects */
 }
 
 .project-video {
-    width: 80%; /* Adjust the width for a horizontal layout */
-    max-width: 800px; /* Maximum width for larger screens */
+    width: 100%; /* Make the video responsive */
+    max-width: 600px; /* Set a max-width for larger screens */
     height: auto; /* Maintain aspect ratio */
 }
 
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
 footer {
-    text-align: center; /* Center align footer text */
-    padding: 20px; /* Add padding */
-    background-color: #f8f8f8; /* Light background for the footer */
-}
-
-a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Link color */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
 }
