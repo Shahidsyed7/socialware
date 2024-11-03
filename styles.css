@@ -1,0 +1,148 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #37403a;
+    color: #fef1d7;
+}
+
+a {
+    color: #fef1d7;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #37403a;
+    border-bottom: 1px solid #fef1d7;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    color: #9bb19b;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fef1d7;
+    color: #37403a;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #9bb19b;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #46534a;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 250px;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #37403a;
+    border-top: 1px solid #fef1d7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container, .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
